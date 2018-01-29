@@ -51,7 +51,7 @@ export class HomePage {
     }
   };
 
-  constructor(public navCtrl: NavController, private googleMaps: GoogleMaps) { }
+  constructor(public navCtrl: NavController, private googleMaps: GoogleMaps) {}
 
   ionViewDidLoad() {
     this.map = this.googleMaps.create('map_canvas', this.mapOptions);
