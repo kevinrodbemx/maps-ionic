@@ -56,6 +56,7 @@ export class HomePage {
   ionViewDidLoad() {
     this.map = this.googleMaps.create('map_canvas', this.mapOptions);
     this.map.on(GoogleMapsEvent.MAP_READY).subscribe(() => {
+      this.loadClinicas2();
       console.log('ready');
     });
   }
